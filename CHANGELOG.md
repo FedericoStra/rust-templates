@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com),
 and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
+### Added
+- Template `lib` to generate a basic library. Features:
+  - `Cargo.toml` with name, author, description, license, repository;
+  - `README.md` with description and badges (crates.io, docs.rs, repository, workflow, dependencies, license);
+  - `CHANGELOG.md` automatically updated by `cargo release`;
+  - `release.toml` to configure `cargo release`;
+  - document all features on `docs.rs`.
 
 ## [0.0.0] - 2022-09-15
 Empty release.

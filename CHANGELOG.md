@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 ### Added
 - Template `lib`:
   - Make `docs.rs` automatically document the features required for each item.
+  - Add basic module documentation.
 
 ## [0.1.0] - 2022-09-15
 ### Added

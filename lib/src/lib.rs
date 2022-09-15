@@ -1,3 +1,11 @@
+/*! {{description}}
+
+# Usage
+
+# Examples
+
+*/
+
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]
 
 #[cfg(test)]

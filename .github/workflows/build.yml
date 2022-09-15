@@ -1,0 +1,43 @@
+name: Build Template
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  
+  # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+  schedule:
+    # every monday at 09:00
+    - cron: '9 0 * * 1'
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  check-lib:
+    runs-on: ubuntu-latest
+
+    env:
+      PROJECT_NAME: my-cool-project
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # https://github.com/cargo-generate/cargo-generate-action
+      - uses: cargo-generate/cargo-generate-action@v0.16.0
+        with:
+          name: ${{ env.PROJECT_NAME }}
+          subfolder: lib
+          other: --lib -d gh_username=GitHubUsername -d description=Description
+
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: check
+        # we need to move the generated project to a temp folder, away from the template project
+        # otherwise `cargo` runs would fail, see https://github.com/rust-lang/cargo/issues/9922
+        run: |
+          mv $PROJECT_NAME ${{ runner.temp }}/
+          cd ${{ runner.temp }}/$PROJECT_NAME
+          cargo check --verbose --all-features --all-targets

@@ -18,7 +18,7 @@ Generate a basic library. Features:
 - `README.md` with description and badges (crates.io, docs.rs, repository, workflow, dependencies, license);
 - `CHANGELOG.md` automatically updated by `cargo release`;
 - `release.toml` to configure `cargo release`;
-- document all features on `docs.rs`;
+- enable all features on `docs.rs` (and document the features required for every item);
 - GitHub workflow to check the library.
 
 #### placeholders

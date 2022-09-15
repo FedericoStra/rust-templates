@@ -9,6 +9,23 @@ These templates are supposed to be used with `cargo generate`:
 - crate: <https://crates.io/crates/cargo-generate>
 - guide: <https://cargo-generate.github.io/cargo-generate/index.html>
 
+## Templates
+
+### lib
+
+Generate a basic library. Features:
+- `Cargo.toml` with name, author, description, license, repository;
+- `README.md` with description and badges (crates.io, docs.rs, repository, workflow, dependencies, license);
+- `CHANGELOG.md` automatically updated by `cargo release`;
+- `release.toml` to configure `cargo release`;
+- document all features on `docs.rs`;
+- GitHub workflow to check the library.
+
+#### placeholders
+
+- `gh_username`: GitHub username. The repository will be `{{gh_username}}/{{project-name}}`.
+- `description`: description of the project.
+
 ## Release guide
 
 This section is mainly intended for personal use, as a reminder to myself of the process of releasing a new version.

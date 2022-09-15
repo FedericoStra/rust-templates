@@ -14,7 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org).
   - `README.md` with description and badges (crates.io, docs.rs, repository, workflow, dependencies, license);
   - `CHANGELOG.md` automatically updated by `cargo release`;
   - `release.toml` to configure `cargo release`;
-  - document all features on `docs.rs`.
+  - document all features on `docs.rs`;
+  - GitHub workflow to check the library.
 
 ## [0.0.0] - 2022-09-15
 Empty release.

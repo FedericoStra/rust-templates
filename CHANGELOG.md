@@ -20,5 +20,5 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 Empty release.
 
 [Unreleased]: https://github.com/FedericoStra/rust-templates/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/FedericoStra/rust-templates/releases/tag/v0.1.0
+[0.1.0]: https://github.com/FedericoStra/rust-templates/compare/v0.0.0...v0.1.0
 [0.0.0]: https://github.com/FedericoStra/rust-templates/releases/tag/v0.0.0

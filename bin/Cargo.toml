@@ -1,0 +1,18 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+description = "{{description}}"
+license = "MIT" # https://spdx.org/licenses/
+repository = "https://github.com/{{gh_username}}/{{project-name}}"
+categories = [] # https://crates.io/category_slugs
+keywords = []
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--cfg", "docsrs"]
+all-features = true

@@ -41,3 +41,31 @@ jobs:
           mv $PROJECT_NAME ${{ runner.temp }}/
           cd ${{ runner.temp }}/$PROJECT_NAME
           cargo check --verbose --all-features --all-targets
+
+  check-bin:
+    runs-on: ubuntu-latest
+
+    env:
+      PROJECT_NAME: my-cool-project
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # https://github.com/cargo-generate/cargo-generate-action
+      - uses: cargo-generate/cargo-generate-action@v0.16.0
+        with:
+          name: ${{ env.PROJECT_NAME }}
+          subfolder: bin
+          other: --bin -d gh_username=GitHubUsername -d description=Description
+
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: check
+        # we need to move the generated project to a temp folder, away from the template project
+        # otherwise `cargo` runs would fail, see https://github.com/rust-lang/cargo/issues/9922
+        run: |
+          mv $PROJECT_NAME ${{ runner.temp }}/
+          cd ${{ runner.temp }}/$PROJECT_NAME
+          cargo check --verbose --all-features --all-targets

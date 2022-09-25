@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com),
 and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
+
+## [0.2.0] - 2022-09-25
 ### Added
 - Template `bin` to generate a basic binary. Features:
   - `Cargo.toml` with name, author, description, license, repository;
@@ -35,7 +37,8 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 ## [0.0.0] - 2022-09-15
 Empty release.
 
-[Unreleased]: https://github.com/FedericoStra/rust-templates/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/FedericoStra/rust-templates/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/FedericoStra/rust-templates/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/FedericoStra/rust-templates/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/FedericoStra/rust-templates/compare/v0.0.0...v0.1.0
 [0.0.0]: https://github.com/FedericoStra/rust-templates/releases/tag/v0.0.0

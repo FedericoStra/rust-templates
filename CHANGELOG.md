@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com),
 and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
+### Fixed
+- Fix `cargo test` invocation in GitHub workflow for templates `lib` and `bin`.
+  Remove the argument `--all-targets` otherwise the documentation is not tested.
 
 ## [0.2.0] - 2022-09-25
 ### Added

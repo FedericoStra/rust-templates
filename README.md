@@ -3,7 +3,7 @@
 > A collection of templates to be used with `cargo generate`.
 
 [![GitHub](https://img.shields.io/static/v1?label=github&message=FedericoStra/rust-templates&color=brightgreen&logo=github)](https://github.com/FedericoStra/rust-templates)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/FedericoStra/rust-templates/Build%20Template?logo=githubactions&logoColor=white)](https://github.com/FedericoStra/rust-templates/actions/workflows/build.yml)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/FedericoStra/rust-templates/build.yml?logo=githubactions&logoColor=white)](https://github.com/FedericoStra/rust-templates/actions/workflows/build.yml)
 [![MIT license](https://img.shields.io/github/license/FedericoStra/rust-templates)](https://github.com/FedericoStra/rust-templates/blob/master/LICENSE)
 
 These templates are supposed to be used with `cargo generate`:

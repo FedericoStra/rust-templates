@@ -21,7 +21,7 @@ jobs:
       PROJECT_NAME: my-cool-project
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       # https://github.com/cargo-generate/cargo-generate-action
       - uses: cargo-generate/cargo-generate-action@v0.16.0
@@ -49,7 +49,7 @@ jobs:
       PROJECT_NAME: my-cool-project
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       # https://github.com/cargo-generate/cargo-generate-action
       - uses: cargo-generate/cargo-generate-action@v0.16.0

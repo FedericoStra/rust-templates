@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
 
+## [0.2.2] - 2024-04-09
+### Changed
+- Update GitHub CI actions to `actions/checkout@v4`, both in this project and in the individual templates.
+
 ## [0.2.1] - 2023-04-25
 ### Changed
 - Allow manually running the GitHub workflow for templates `lib` and `bin`.
@@ -45,7 +49,8 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 ## [0.0.0] - 2022-09-15
 Empty release.
 
-[Unreleased]: https://github.com/FedericoStra/rust-templates/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/FedericoStra/rust-templates/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/FedericoStra/rust-templates/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/FedericoStra/rust-templates/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/FedericoStra/rust-templates/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/FedericoStra/rust-templates/compare/v0.1.0...v0.1.1

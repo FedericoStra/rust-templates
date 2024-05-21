@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com),
 and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
+### Added
+- Reminder of common sections in `CHANGELOG.md` for templates `lib` and `bin`.
 
 ## [0.2.2] - 2024-04-09
 ### Changed

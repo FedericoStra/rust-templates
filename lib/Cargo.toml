@@ -7,7 +7,7 @@ license = "MIT" # https://spdx.org/licenses/
 repository = "https://github.com/{{gh_username}}/{{project-name}}"
 categories = [] # https://crates.io/category_slugs
 keywords = []
-edition = "2021"
+edition = "2024"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

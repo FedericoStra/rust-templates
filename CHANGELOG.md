@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com),
 and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
+
+## [0.2.4] - 2025-04-24
 ### Changed
 - Set `package.edition` to 2024 for templates `lib` and `bin`.
 
@@ -55,7 +57,8 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 ## [0.0.0] - 2022-09-15
 Empty release.
 
-[Unreleased]: https://github.com/FedericoStra/rust-templates/compare/v0.2.3...HEAD
+[Unreleased]: https://github.com/FedericoStra/rust-templates/compare/v0.2.4...HEAD
+[0.2.4]: https://github.com/FedericoStra/rust-templates/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/FedericoStra/rust-templates/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/FedericoStra/rust-templates/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/FedericoStra/rust-templates/compare/v0.2.0...v0.2.1
